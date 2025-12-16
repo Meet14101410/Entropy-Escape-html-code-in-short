@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Entropy Escape</title>
+  <style>
+    body { text-align:center; font-family:Arial; background:#fff3e0; }
+    #box {
+      width:50px; height:50px; background:#ff9800;
+      position:absolute; top:120px; left:20px;
+    }
+    button { padding:10px 15px; font-size:16px; }
+  </style>
+</head>
+<body>
+
+<h2>Entropy Escape</h2>
+<p>Click to increase disorder!</p>
+
+<div id="box"></div>
+<button onclick="escape()">Increase Entropy</button>
+
+<script>
+function escape() {
+  box.style.top  = Math.random()*300 + "px";
+  box.style.left = Math.random()*300 + "px";
+}
+</script>
+
+</body>
+</html>
